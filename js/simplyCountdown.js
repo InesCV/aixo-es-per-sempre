@@ -1,7 +1,7 @@
 /*!
  * Project : simply-countdown
  * File : simplyCountdown
- * Date : 27/06/2015
+ * Date : 21/03/2025
  * License : MIT
  * Version : 1.3.2
  * Author : Vincent Loy <vincent.loy1@gmail.com>
@@ -115,9 +115,9 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2015,
-                month: 6,
-                day: 28,
+                year: 2026,
+                month: 3,
+                day: 21,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
@@ -130,7 +130,7 @@
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {
                     return;
                 },
