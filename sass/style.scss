@@ -1060,7 +1060,7 @@ form {
 		color: $brand-primary;
 		font-size: 30px;
 	}
-	.groom,.bride{
+	.bride-2-1,.bride-2-2{
 		float: left;
 		@include border-radius(50%);
 		// overflow: hidden;
@@ -1083,32 +1083,32 @@ form {
 			}
 		}
 	}
-	.groom{
+	.bride-2-1{
 		float: right;
 		margin-right: 5px;
 	}
-	.bride{
+	.bride-2-2{
 		float: left;
 		margin-left: 5px;
 	}
-	.desc-groom{
+	.desc-bride-2-1{
 		padding-right: 180px;
 		text-align: right;
 	}
-	.desc-bride{
+	.desc-bride-2{
 		padding-left: 180px;
 		text-align: left;
 	}
 	@media screen and (max-width: $screen-xs){
-		.groom,.bride{
+		.bride-2-1,.bride-2-2{
 			margin-left: 0;
 			margin-right: 0;
 		}
-		.desc-groom{
+		.desc-bride-2-1{
 			padding-right: 0;
 			text-align: center;
 		}
-		.desc-bride{
+		.desc-bride-2{
 			padding-left: 0;
 			text-align: center;
 		}
