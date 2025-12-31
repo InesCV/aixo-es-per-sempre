@@ -412,14 +412,16 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 #fh5co-counter .fh5co-heading h2,
-#fh5co-event .fh5co-heading h2,
-#fh5co-faqs .fh5co-heading h2 {
+#fh5co-event .fh5co-heading h2, 
+.fh5co-heading h2, 
+#fh5co-faqs h2 {
   color: #fff;
 }
 
 #fh5co-gallery h2 {
   color: #8c6f6f;
 }
+
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
   color: rgba(255, 255, 255, 0.5);
@@ -457,10 +459,10 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 30px;
   width: 100%;
   float: left;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .event-wrap,
@@ -478,6 +480,13 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+#fh5co-services h3 {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 #fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span,
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
@@ -539,13 +548,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline > li > .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #d4d4d4;
+  /* border: 1px solid #d4d4d4; */
   padding: 30px;
   position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 .timeline > li > .timeline-panel:before {
   position: absolute;
@@ -595,12 +604,13 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 16px;
   left: 50%;
   margin-left: -80px;
-  background-color: #999999;
+  background-color: #fff;
   z-index: 100;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  /* border: 1px solid rgba(140, 111, 111, 0.4); */
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
@@ -680,6 +690,76 @@ h1, h2, h3, h4, h5, h6, figure {
     left: -14px;
     right: auto;
   }
+}
+
+.panel-heading a {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.panel-heading a:after {
+  content: "+";
+  float: right;
+}
+
+.panel-heading a[aria-expanded="true"]:after {
+  content: "–";
+}
+
+.panel-heading h4 {
+  font-weight: 700;
+}
+
+.panel-body {
+  color: #fff;
+}
+
+.panel-body a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.panel-body .forbidden-colors {
+  display: flex;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 260px;
+}
+
+.forbidden-colors > li {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  list-style: none;
+  border: 1px solid #551d21;
+  border-radius: 50%;
+}
+
+.forbidden-colors .dark-brown {
+  background-color: #551d21;
+}
+
+.forbidden-colors .light-brown {
+  background-color: #8c6f6f;
+}
+
+.forbidden-colors .beige {
+  background-color: #CBC0B6;
+}
+
+.forbidden-colors .white {
+  background-color: #fff;
+}
+
+
+.panel-header :hover, a:active, a:focus {
+  color: #551d21;
+  border-color: #551d21;
 }
 
 #fh5co-gallery-list {
@@ -1133,7 +1213,8 @@ form label {
 }
 
 #fh5co-couple p, 
-#fh5co-faqs p {
+#fh5co-faqs p,
+#fh5co-services p {
   color: #fff;
 }
 
