@@ -1575,7 +1575,7 @@ form label {
   background: rgba(255, 255, 255, 0.3);
 }
 #fh5co-started .btn {
-  height: 54px;
+  /* height: 54px; */
   border: none !important;
   background: #8c6f6f;
   color: #fff;
@@ -1585,6 +1585,7 @@ form label {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 #fh5co-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
