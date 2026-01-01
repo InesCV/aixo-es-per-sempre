@@ -77,6 +77,14 @@ $form-group-margin-bottom:       30px !default;
 	font-style: normal;
 }
 
+@font-face {
+  font-family: 'Catchy Mager';
+  src: url('../fonts/catchy-mager/CatchyMager.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @mixin icomoon() {
 	
 	font-family: 'icomoon';
