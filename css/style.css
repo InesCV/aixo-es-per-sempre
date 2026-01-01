@@ -69,6 +69,10 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
+#fh5co-faqs a:hover, a:active, a:focus {
+  color: #551d21;
+}
+
 p {
   margin-bottom: 20px;
 }
