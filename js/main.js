@@ -62,6 +62,25 @@
 		});
 	};
 
+  var offcanvasAnchorFix = function() {
+    $('body').on('click', '#fh5co-offcanvas a[href^="#"]', function (event) {
+      var target = $($(this).attr('href'));
+
+      if (target.length) {
+        event.preventDefault();
+
+        // Scroll suau fins a la secció
+        $('html, body').animate({
+          scrollTop: target.offset().top - 70 // ajusta si tens navbar fixed
+        }, 800, 'easeInOutExpo');
+
+        // Tancar menú offcanvas
+        $('body').removeClass('overflow offcanvas');
+        $('.js-fh5co-nav-toggle').removeClass('active');
+      }
+  });
+
+};
 
 	var burgerMenu = function() {
 
@@ -219,6 +238,7 @@
 		parallax();
 		offcanvasMenu();
 		burgerMenu();
+    offcanvasAnchorFix(); 
 		contentWayPoint();
 		dropdown();
 		testimonialCarousel();
